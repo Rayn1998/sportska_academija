@@ -1,6 +1,6 @@
 import React from 'react';
 
-import arrowLeft from './images/arrow_left.png';
+import xButton from './images/x-mark.png';
 import menuIcon from './images/dumbbell.png';
 
 const MenuButton = ({props}) => {
@@ -17,7 +17,7 @@ const MenuButton = ({props}) => {
 				transition: 'all 0.4s ease-in-out',
 				backgroundImage: shown
 					? `url(${menuIcon})`
-					: `url(${arrowLeft})`,
+					: `url(${xButton})`,
 				backgroundSize: 'cover',
 			}}
 		></div>

@@ -4,10 +4,10 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 29px;
-	border: 8px solid #ffd600;
+	border: 8px solid var(--main-text-yellow);
 	border-radius: 20px;
     padding: 11px 17px;
-    color: #FFFFFF;
+    color: var(--main-text-color);
     cursor: pointer;
     position: absolute;
     top: 80%;
@@ -18,8 +18,8 @@
 }
 
 .home__contact:hover {
-	background-color: #ffd600;
-	color: #000;
+	background-color: var(--main-text-yellow);
+	color: var(--main-black);
 }
 
 @media screen and (max-width: 1024px) {

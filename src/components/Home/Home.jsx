@@ -5,8 +5,6 @@ import { useLocation } from 'react-router-dom';
 
 function Home({props}) {
 
-  const {scrollWorks, shown} = props
-
   const location = useLocation();
 
   return (
@@ -18,7 +16,7 @@ function Home({props}) {
         }}
         type="button" 
         className="home__button"
-        onClick={scrollWorks}
+        // onClick={scrollWorks}
       ></button>
       <div className='home__contact'>CONTACT NOW</div>
     </div>

@@ -1,25 +1,22 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './Home/Home';
-// import Clients from './Clients';
-// import AboutMe from './AboutMe';
-// import Footer from './Footer/Footer';
 import HeaderMedia from './HeaderMedia/HeaderMedia';
-import ArrowUp from './ArrowUp/ArrowUp';
-// import OtherProjects from './OtherProjects';
-// import OtherProjectView from './OtherProjectView';
+// import ArrowUp from './ArrowUp/ArrowUp';
 import Navigation from './Navigation/Navigation';
 import Loading from './Loading';
 import PageNotFound from './PageNotFound';
-import Thank from './Thank';
+// import Thank from './Thank';
 import Slider from './Slider/Slider';
+import FitnessSolution from './FitnessSolution/FitnessSolution';
+import BlockTitle from './BlockTitle/BlockTitle';
 
 // const LazyWork = React.lazy(() => import('./Work'));
 
 function Main({ props }) {
 	return (
 		<main className="page">
-			<ArrowUp scroll={props.scrollHome} show={props.arrowUpShow} />
+			{/* <ArrowUp scroll={props.scrollHome} show={props.arrowUpShow} /> */}
 			<HeaderMedia />
 			<Navigation props={props} />
 
@@ -33,32 +30,18 @@ function Main({ props }) {
 					element={
 						<React.Suspense fallback={<Loading />}>
 							<Home props={props} />
-							{/* <Clients /> */}
-
-							{/* <React.Suspense fallback={<Loading />}>
-								<LazyWork props={props} />
-							</React.Suspense> */}
-
-							<h2 className="carousel-title">Other projects</h2>
 							<Slider />
-							{/* <AboutMe props={props} /> */}
+							<BlockTitle text='FIND YOUR FITNESS' yellowText='SOLUTION'/>
+							<FitnessSolution />
+							<BlockTitle text='ACHIVE' yellowText='MENTS' />
 							{/* <Footer props={props} /> */}
 						</React.Suspense>
 					}
 				/>
 				
 
-				{/* <Route
-					path="/other-projects"
-					element={<OtherProjects link={props.toCurtainProject} />}
-				/>
 
-					<Route
-						path="other-projects/:id"
-						element={<OtherProjectView />}
-					/>
-
-				<Route path="*" element={ <Navigate to="/page-not-found" /> } /> */}
+				<Route path="*" element={ <Navigate to="/page-not-found" /> } /> 
 			</Routes>
 		</main>
 	);

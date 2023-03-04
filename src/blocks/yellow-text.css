@@ -1,3 +1,6 @@
 .yellow-text {
-    color: #FFD600;
+    color: var(--main-text-yellow);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }

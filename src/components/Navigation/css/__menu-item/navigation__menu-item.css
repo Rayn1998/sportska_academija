@@ -9,12 +9,12 @@
     position: relative;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
-    color:#fff;
+    color: var(--main-text-color);
     z-index: 1;
 }
 
 .navigation__menu-item:hover {
-    color: #000;
+    color: var(--main-black);
 }
 
 .navigation__menu-item::after {
@@ -27,7 +27,7 @@
     z-index: -1;
     display: block;
     border-radius: 10px;
-    background-color: #FFD600;
+    background-color: var(--main-text-yellow);
     transition: width 0.3s ease-in-out;
     transform: translate(-50%);
 }

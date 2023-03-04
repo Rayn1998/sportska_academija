@@ -19,7 +19,7 @@
         padding-top: 25vh;
         gap: 140px;
         z-index: 2;
-        color: #000000;
+        color: var(--main-black);
     }
 
     .navigation__menu::before{

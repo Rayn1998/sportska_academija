@@ -1,7 +1,7 @@
 .body {
     max-width: 1440px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #000000 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 95%, rgb(27, 0, 46) 100%);
+    background-color: black;
     color: rgba(227, 228, 230, 0.55);
     font-family: "Sansita", "Arial", sans-serif;
 }
