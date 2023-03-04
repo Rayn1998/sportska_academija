@@ -1,0 +1,36 @@
+.home__contact {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	border: 8px solid #ffd600;
+	border-radius: 20px;
+    padding: 11px 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.home__contact:hover {
+	background-color: #ffd600;
+	color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+	.home__contact {
+		top: 70%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.home__contact {
+		visibility: hidden;
+		opacity: 0;
+	}
+}

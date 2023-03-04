@@ -1,0 +1,8 @@
+.slider__slide {
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    top: 0;
+    left: 0;
+}

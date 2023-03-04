@@ -1,0 +1,13 @@
+.showreels {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .showreels {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}

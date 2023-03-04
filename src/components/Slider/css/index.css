@@ -1,0 +1,4 @@
+@import url('./slider.css');
+@import url('./__slide/slider__slide.css');
+@import url('./__btn-left/slider__btn-left.css');
+@import url('./__btn-right/slider__btn-right.css');

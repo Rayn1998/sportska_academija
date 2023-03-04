@@ -1,0 +1,9 @@
+.work__image-wrapper_order_2 {
+  order: 1;
+}
+
+@media screen and (max-width: 978px) {
+  .work__image-wrapper_order_2 {
+      order: 0;
+  }   
+}

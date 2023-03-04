@@ -1,0 +1,14 @@
+.showreels__title {
+    margin: 0;
+    font-size: 64px; 
+    text-shadow: 0 0 100px  rgba(0, 0, 0, 1);
+    color: var(--side-text-color);
+    text-align: center;
+    box-shadow: 0 0 30px 3px #000;
+}
+
+@media screen and (max-width: 400px) {
+    .showreels__title {
+        font-size: 36px;
+    }
+}

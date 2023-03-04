@@ -1,0 +1,4 @@
+.home__player {
+  object-fit: cover;
+  overflow: hidden;
+}

@@ -1,0 +1,24 @@
+.work__title {
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    color: var(--main-text-color);
+    line-height: 72px;
+    margin: 0 0 97px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .work__title {
+        font-size: 54px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .work__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}

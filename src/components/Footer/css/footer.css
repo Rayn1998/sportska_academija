@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+}
+
+.footer::after {
+  content: '';
+  z-index: -1;
+  position: static;
+  width: 100px;
+  height: 400px;
+  background: linear-gradient(to bottom, var(--overlay-low-opacity) 0%, rgba(87, 9, 139, 0.2) 100%);
+}

@@ -1,0 +1,9 @@
+.work__article-image_order_2 {
+    order: 2;
+}
+
+@media screen and (max-width: 1280px) {
+    .work__article-image_order_2 {
+        order: 0;
+    }   
+}

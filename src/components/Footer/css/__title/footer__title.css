@@ -1,0 +1,19 @@
+.footer__title {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 84px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 380px) {
+    .footer__title {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+}

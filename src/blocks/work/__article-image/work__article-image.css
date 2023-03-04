@@ -1,0 +1,6 @@
+.work__article-image {
+    max-height: 491px;
+    z-index: -1;
+    /* box-shadow: 0 0 50px #000; */
+    box-shadow: 0 0 50px rgb(22, 2, 45);
+}

@@ -1,0 +1,7 @@
+.clients__logo {
+    display: block;
+    height: 40px;
+    filter: saturate(0) brightness(0.75);
+    max-width: 100%;
+    object-fit: contain;
+}

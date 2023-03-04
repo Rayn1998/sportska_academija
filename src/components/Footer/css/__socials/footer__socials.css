@@ -1,0 +1,20 @@
+.footer__socials {
+    margin: 0 auto;
+    padding: 0 116px;
+    display: flex;
+    gap: 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__socials {
+    padding: 0 56px;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__socials {
+    gap: 12px;
+    padding: 0 12px;
+  }
+}

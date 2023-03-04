@@ -1,0 +1,13 @@
+.work__article {
+    display: flex;
+    gap: 56px;
+    padding: 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 978px) {
+    .work__article {
+        flex-direction: column;
+    }
+}

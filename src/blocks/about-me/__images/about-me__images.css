@@ -1,0 +1,7 @@
+.about-me__images {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-template-areas: "img1 img2"
+                         "img1 img3";
+    gap: 32px;
+}

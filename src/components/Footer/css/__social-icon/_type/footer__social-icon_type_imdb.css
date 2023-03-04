@@ -1,0 +1,8 @@
+.footer__social-icon_type_imdb {
+    /* background-image: url("../../../../images/footer__imdb-icon.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    filter: brightness(0.6)
+}

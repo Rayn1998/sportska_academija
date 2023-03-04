@@ -1,0 +1,36 @@
+.other-projects__img {
+    min-width: 100%;
+    min-height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    filter: brightness(0.7) grayscale(0.7);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.other-projects__img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 300px #000;
+    filter: brightness(1) grayscale(0);
+}
+
+.other-projects__img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: var(--overlay);
+    transition: all 0.3s ease-in-out;
+}
+
+.other-projects__img:hover::before {
+    opacity: 0;
+}

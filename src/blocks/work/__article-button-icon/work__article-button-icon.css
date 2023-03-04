@@ -1,0 +1,8 @@
+.work__article-button-icon {
+    height: 24px;
+    width: 24px;
+    background-image: url("../../../images/button__right.png");
+    background-size: 7px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

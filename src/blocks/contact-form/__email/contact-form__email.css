@@ -1,0 +1,7 @@
+.contact-form__email {
+    width: 100%;
+    background-color: var(--workstack-bg);
+    border: 5px solid var(--btn-small-border);
+    color: var(--main-text-color);
+    border-radius: 10px;
+}

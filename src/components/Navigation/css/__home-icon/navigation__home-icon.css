@@ -1,0 +1,32 @@
+.navigation__home-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-image: url("../../images/logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;;
+    cursor: pointer;
+    top: 30px;
+    left: 80px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navigation__home-icon::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 35px 35px #FFD600;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation__home-icon:hover::before {
+    opacity: 0.8;
+}
