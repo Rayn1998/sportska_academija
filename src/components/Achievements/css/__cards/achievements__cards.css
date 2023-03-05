@@ -1,0 +1,15 @@
+.achievements__cards {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 870px) {
+  .achievements__cards {
+    height: auto;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+}

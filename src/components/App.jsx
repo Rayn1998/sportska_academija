@@ -204,6 +204,7 @@ function App() {
 					linkHome,
 					menuClick,
 					shown,
+          setShown,
 					arrowUpShow,
 					toOtherProjects,
 					toCurtainProject,

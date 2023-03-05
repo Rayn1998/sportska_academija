@@ -9,6 +9,7 @@ import PageNotFound from './PageNotFound';
 // import Thank from './Thank';
 import Slider from './Slider/Slider';
 import FitnessSolution from './FitnessSolution/FitnessSolution';
+import Achievements from './Achievements/Achievements';
 import BlockTitle from './BlockTitle/BlockTitle';
 
 // const LazyWork = React.lazy(() => import('./Work'));
@@ -34,6 +35,8 @@ function Main({ props }) {
 							<BlockTitle text='FIND YOUR FITNESS' yellowText='SOLUTION'/>
 							<FitnessSolution />
 							<BlockTitle text='ACHIVE' yellowText='MENTS' />
+              <Achievements />
+							<BlockTitle text='OUR' yellowText='GALLERY' />
 							{/* <Footer props={props} /> */}
 						</React.Suspense>
 					}

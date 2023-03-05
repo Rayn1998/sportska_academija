@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MenuButton from '../MenuButton/MenuButton';
 
 const Navigation = ({ props }) => {
@@ -14,8 +14,22 @@ const Navigation = ({ props }) => {
 		homeDelay,
 	} = props;
 
+  const [menuHide, setMenuHide] = useState(false);
+
+  function hideMenu() {
+    window.scrollY > 200 ? setMenuHide(true) : setMenuHide(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', hideMenu);
+    return(() => window.removeEventListener('scroll', hideMenu));
+  }, [menuHide]);
+
 	return (
-		<nav className="navigation" ref={homeRef}>
+		<nav 
+      className="navigation" 
+      ref={homeRef}
+    >
 			<MenuButton props={{ menuClick, shown }} />
 			<div
 				className="navigation__home-icon"
@@ -30,7 +44,8 @@ const Navigation = ({ props }) => {
 				className="navigation__menu"
 				style={{
 					transform: shown ? 'translateX(1400px)' : 'translateX(0)',
-					transition: 'transform 0.3s ease-in-out',
+          translate: menuHide ? '0px -1000px' : '0 0',
+					transition: 'all 0.3s ease-in-out',
 				}}
 			>
 				<li className="navigation__menu-item" onClick={scrollWorks}>

@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 54px 0 95px;
     opacity: 0.9;
+    gap: 50px;
 }
