@@ -1,0 +1,12 @@
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "img1 img1 img2"
+        "img1 img1 img3"
+        "img4 img4 img4";
+    padding: 40px;
+    gap: 10px;
+    box-sizing: border-box;
+    background-color: var(--main-text-color);
+}

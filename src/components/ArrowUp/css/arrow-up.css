@@ -1,0 +1,17 @@
+.arrow-up {
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/arrow-up1.png");
+    background-size: cover;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    cursor: pointer;
+    z-index: 5;
+    translate: 0 0;
+}
+
+.arrow-up:hover {
+    translate: 0 -15px;
+    filter: opacity(0.75);
+}

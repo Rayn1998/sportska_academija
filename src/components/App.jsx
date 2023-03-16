@@ -1,10 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
 
 import Main from './Main';
 import '../pages/index.css';
 import Popup from './Popup';
-// import ContactForm from './ContactForm';
 import Player from './Player';
 
 function App() {
@@ -27,9 +26,9 @@ function App() {
 
 	const [prevSrollPos, setPrevScrollPos] = useState(0);
 
+	const swiperRef = useRef();
+	const galleryRef = useRef();
 	const homeRef = useRef();
-	const workRef = useRef();
-	const showreelsRef = useRef();
 	const contactsRef = useRef();
 
 	const navigation = useNavigate();
@@ -94,7 +93,7 @@ function App() {
 		setrIsPopupOpened(false);
 		setFormOpened(false);
 		setArrowUpShow(true);
-		workRef.current.focus();
+		// workRef.current.focus();
 	}
 
 	function handleContactForm() {
@@ -122,24 +121,24 @@ function App() {
 		});
 	}
 
-	function scrollWorks() {
+	function scrollSwiper() {
 		if (checkHome()) {
-			scroll(workRef);
+			scroll(swiperRef);
 		} else {
 			linkHome();
 			setTimeout(() => {
-				scroll(workRef);
+				scroll(swiperRef);
 			}, 1000);
 		}
 	}
 
-	function scrollShowreels() {
+	function scrollGallery() {
 		if (checkHome()) {
-			scroll(showreelsRef);
+			scroll(galleryRef);
 		} else {
 			linkHome();
 			setTimeout(() => {
-				scroll(showreelsRef);
+				scroll(galleryRef);
 			}, 1000);
 		}
 	}
@@ -193,13 +192,15 @@ function App() {
 					handlePopupTrailer,
 					setLink,
 					homeRef,
-					workRef,
-					showreelsRef,
+					swiperRef,
+					scrollSwiper,
+					galleryRef,
+					scrollGallery,
 					contactsRef,
 					scrollHome,
-					scrollWorks,
-					scrollContacts,
-					scrollShowreels,
+					// scrollWorks,
+					// scrollContacts,
+					// scrollShowreels,
 					setCurrentTitle,
 					linkHome,
 					menuClick,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper.min.css';
+import 'swiper/modules/pagination/pagination.min.css';
 
 // Добавить текста
  
@@ -11,7 +11,8 @@ import img2 from './images/2.png';
 import img3 from './images/3.png';
 import img4 from './images/4.png';
 
-const Slider = () => {
+const Slider = ({props}) => {
+	const { swiperRef } = props;
 	const images = [img1, img2, img3, img4];
 
 	return (
@@ -27,6 +28,7 @@ const Slider = () => {
 				disableOnInteraction: false,
 			}}
 			loop
+			ref = {swiperRef}
 		>
 			{images.map((img, i) => {
 				return (

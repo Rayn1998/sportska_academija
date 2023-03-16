@@ -13,9 +13,6 @@
 /* PAGE NOT FOUND */
 @import url("../blocks/page-not-found.css");
 
-/* ARROW-UP */
-/* @import url("../blocks/arrow-up/arrow-up.css"); */
-
 /* BODY */
 @import url("../blocks/body/body.css");
 
@@ -46,9 +43,11 @@
 /* ACHIEVEMENTS */
 @import url("../components/Achievements/css/index.css");
 
+/* GALLERY */
+@import url("../components/Gallery/css/index.css");
 
-
-
+/* ARROW-UP */
+@import url("../components/ArrowUp/css/index.css");
 
 
 
