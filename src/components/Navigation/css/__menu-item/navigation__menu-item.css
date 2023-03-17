@@ -38,7 +38,8 @@
 
 @media screen and (max-width: 1000px) {
     .navigation__menu-item {
-        font-size: 64px;
+        /* font-size: 64px; */
+        font-size: calc(4vh + 4vw);
     }
 
     .navigation__menu-item::after {

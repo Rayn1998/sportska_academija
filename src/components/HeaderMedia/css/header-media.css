@@ -4,6 +4,7 @@
     left: 0;
     width: calc(100vw - (100vw - 100%));
     z-index: -1;
+    box-shadow: 0 0 80px 80px rgba(0,0,0,1);
 }
 
 .header-media::before {

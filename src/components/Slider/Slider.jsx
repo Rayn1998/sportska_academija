@@ -7,7 +7,7 @@ import 'swiper/modules/pagination/pagination.min.css';
 // Добавить текста
  
 import img1 from './images/1.png';
-import img2 from './images/2.png';
+import img2 from './images/2.jpg';
 import img3 from './images/3.png';
 import img4 from './images/4.png';
 

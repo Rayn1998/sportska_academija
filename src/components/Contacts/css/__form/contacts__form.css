@@ -1,0 +1,9 @@
+.contacts__form {
+    width: 75vw;
+    max-width: 800px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}

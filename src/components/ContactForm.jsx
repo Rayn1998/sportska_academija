@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ContactForm = ({ onClose }) => {
+const ContactForm = () => {
 	// const [formValues, setFormValues] = useState({email: '', message: ''});
 
 	// function handleForm(e) {

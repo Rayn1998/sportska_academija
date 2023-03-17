@@ -2,8 +2,10 @@
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 64px;
-	line-height: 77px;
+	/* font-size: 64px; */
+	font-size: calc(2vh + 2vw);
+	/* line-height: 77px; */
+	line-height: calc(4vh);
     background-color: var(--main-text-color);
     color: var(--main-black);
     text-align: center;

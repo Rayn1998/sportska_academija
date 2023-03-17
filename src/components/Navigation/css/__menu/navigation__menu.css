@@ -16,8 +16,8 @@
 @media screen and (max-width: 1000px) {
     .navigation__menu {
         flex-direction: column;
-        padding-top: 25vh;
-        gap: 140px;
+        padding: 15vh 0 0;
+        gap: 60px;
         z-index: 2;
         color: var(--main-black);
     }
@@ -25,7 +25,7 @@
     .navigation__menu::before{
         content: '';
         position: absolute;
-        width: 160vw;
+        width: 170vw;
         height: 140vh;
         top: calc(100vh - 100vh - var(--padding-top));
         left: calc(100vw - 150vw);

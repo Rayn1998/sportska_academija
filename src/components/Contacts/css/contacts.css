@@ -1,0 +1,7 @@
+.contacts {
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}

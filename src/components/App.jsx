@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import Main from './Main';
 import '../pages/index.css';
@@ -26,6 +27,7 @@ function App() {
 
 	const [prevSrollPos, setPrevScrollPos] = useState(0);
 
+	const pageRef = useRef()
 	const swiperRef = useRef();
 	const galleryRef = useRef();
 	const homeRef = useRef();
@@ -39,7 +41,7 @@ function App() {
 		setArrowUpShow(
 			(prevSrollPos > currentScrollPos &&
 				prevSrollPos - currentScrollPos > 1000) ||
-				currentScrollPos > 300
+				currentScrollPos > 350
 		);
 		setPrevScrollPos(currentScrollPos);
 	}
@@ -76,6 +78,10 @@ function App() {
 		return () => window.removeEventListener('scroll', handleArrowUp);
 	}, [handleArrowUp, arrowUpShow, prevSrollPos]);
 
+	// useEffect(() => {
+	// 	shown ? disableBodyScroll(true) : disableBodyScroll(false);
+	// }, [shown]);
+
 	function menuClick(e) {
 		setShown(!shown);
 	}
@@ -93,7 +99,6 @@ function App() {
 		setrIsPopupOpened(false);
 		setFormOpened(false);
 		setArrowUpShow(true);
-		// workRef.current.focus();
 	}
 
 	function handleContactForm() {
@@ -115,10 +120,18 @@ function App() {
 		return location.pathname === '/';
 	}
 
+	const disableScroll = (state) => {
+		state ? disableBodyScroll(pageRef) : enableBodyScroll(pageRef);
+	}
+
 	function scroll(ref) {
 		ref.current.scrollIntoView({
 			behavior: 'smooth',
 		});
+		setShown(true);
+		if (window.innerWidth > 1000) {
+			setTimeout(() => setShown(false), 500);
+		}
 	}
 
 	function scrollSwiper() {
@@ -197,20 +210,20 @@ function App() {
 					galleryRef,
 					scrollGallery,
 					contactsRef,
+					scrollContacts,
 					scrollHome,
-					// scrollWorks,
-					// scrollContacts,
-					// scrollShowreels,
 					setCurrentTitle,
 					linkHome,
 					menuClick,
 					shown,
-          setShown,
+          			setShown,
 					arrowUpShow,
 					toOtherProjects,
 					toCurtainProject,
 					handleContactForm,
 					homeDelay,
+					disableScroll,
+					pageRef,
 				}}
 			/>
 

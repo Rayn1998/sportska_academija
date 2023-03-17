@@ -1,5 +1,6 @@
 .fitness-solution__cards {
     width: 100%;
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,5 +9,6 @@
 @media screen and (max-width: 870px) {
   .fitness-solution__cards {
     flex-direction: column;
+    gap: 40px;
   }
 }

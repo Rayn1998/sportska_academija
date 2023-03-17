@@ -1,4 +1,5 @@
 .fitness-solution {
     width: 100%;
-    padding: 54px 0 95px;
+    padding: 54px 15px 95px;
+    box-sizing:border-box;
 }

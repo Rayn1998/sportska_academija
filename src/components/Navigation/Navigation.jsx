@@ -3,9 +3,6 @@ import MenuButton from '../MenuButton/MenuButton';
 
 const Navigation = ({ props, disScroll }) => {
 	const {
-		// scrollWorks,
-		// scrollShowreels,
-		// scrollContacts,
 		scrollSwiper,
 		scrollGallery,
 		toOtherProjects,
@@ -19,12 +16,12 @@ const Navigation = ({ props, disScroll }) => {
 	function hideMenu() {
 		window.scrollY > 200 ? setMenuHide(true) : setMenuHide(false);
 	}
-	
-	if (window.innerWidth > 1000) {
-		disScroll(shown);
-	} else {
-		disScroll(!shown);
-	}
+
+	useEffect(() => {
+		if (window.innerWidth < 1000) {
+			shown ? disScroll(false) : disScroll(true);
+		}
+	}, [shown])
 
 	useEffect(() => {
 		window.addEventListener('scroll', hideMenu);
@@ -32,7 +29,6 @@ const Navigation = ({ props, disScroll }) => {
 			window.removeEventListener('scroll', hideMenu);
 		};
 	}, [menuHide]);
-	// ref={homeRef}
 	return (
 		<nav className="navigation" >
 			<MenuButton props={{ menuClick, shown }} />
@@ -64,6 +60,12 @@ const Navigation = ({ props, disScroll }) => {
 				</li>
 				<li className="navigation__menu-item" onClick={toOtherProjects}>
 					Other projects
+				</li>
+				<li className="navigation__contact-btn" style={{
+					visibility: window.innerWidth < 1000 ? "visible" : "hidden",
+					display: window.innerWidth < 1000 ? "block" : "none",
+				}}>
+					CONTACT NOW
 				</li>
 			</ul>
 		</nav>

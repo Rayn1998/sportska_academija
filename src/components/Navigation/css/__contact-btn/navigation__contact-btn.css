@@ -1,0 +1,36 @@
+.navigation__contact-btn {
+    border: 10px var(--main-text-yellow) solid;
+    border-radius: 15px;
+    padding: 25px;
+    white-space: nowrap;
+    z-index: 2;
+    color: var(--main-text-color);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: calc(2vw + 2vh);
+    line-height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation__contact-btn:hover {
+    color: var(--main-black);
+}
+
+.navigation__contact-btn::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: var(--main-text-yellow);
+    transform: translate(-50%);
+    transition: all 0.1s ease-in-out;
+}
+
+.navigation__contact-btn:hover::after {
+    width: 100%;
+}
