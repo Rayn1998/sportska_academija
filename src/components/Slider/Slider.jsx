@@ -2,14 +2,14 @@ import React from 'react';
 import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
-import 'swiper/modules/pagination/pagination.min.css';
+// import 'swiper/modules/pagination/pagination.min.css';
 
 // Добавить текста
  
 import img1 from './images/1.png';
 import img2 from './images/2.jpg';
 import img3 from './images/3.png';
-import img4 from './images/4.png';
+import img4 from './images/4.jpg';
 
 const Slider = ({props}) => {
 	const { swiperRef } = props;

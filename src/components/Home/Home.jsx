@@ -18,7 +18,7 @@ function Home({props}) {
         className="home__button"
         onClick={props.scrollSwiper}
       ></button>
-      <div className='home__contact'>CONTACT NOW</div>
+      <div className='home__contact' onClick={props.scrollContacts} >CONTACT NOW</div>
     </div>
   );
 }

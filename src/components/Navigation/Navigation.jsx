@@ -5,6 +5,7 @@ const Navigation = ({ props, disScroll }) => {
 	const {
 		scrollSwiper,
 		scrollGallery,
+        scrollContacts,
 		toOtherProjects,
 		linkHome,
 		menuClick,
@@ -55,16 +56,18 @@ const Navigation = ({ props, disScroll }) => {
 				<li className="navigation__menu-item" onClick={scrollGallery}>
 					Gallery
 				</li>
-				<li className="navigation__menu-item" >
+				<li className="navigation__menu-item" onClick={scrollContacts} >
 					Contacts
 				</li>
 				<li className="navigation__menu-item" onClick={toOtherProjects}>
-					Other projects
+					Something Other
 				</li>
 				<li className="navigation__contact-btn" style={{
 					visibility: window.innerWidth < 1000 ? "visible" : "hidden",
 					display: window.innerWidth < 1000 ? "block" : "none",
-				}}>
+				}}
+                 onClick={scrollContacts}
+                >
 					CONTACT NOW
 				</li>
 			</ul>

@@ -3,7 +3,8 @@
     padding: 0;
     width: 100%;
     font-weight: 300;
-    font-size: 56px;
+    color: var(--main-text-color);
+    font-size: calc(3vh + 2vw);
     line-height: 84px;
     display: flex;
     justify-content: center;

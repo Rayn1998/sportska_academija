@@ -48,7 +48,7 @@ function Main({ props }) {
 							<BlockTitle text="CONTACT" yellowText="FORM" space={true} />
 							{/* <ContactForm /> */}
 							<Contacts />
-							{/* <Footer props={props} /> */}
+							<Footer props={props} />
 						</React.Suspense>
 					}
 				/>

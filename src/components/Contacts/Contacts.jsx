@@ -13,7 +13,7 @@ const Contacts = () => {
 				<input
 					type="email"
 					name="email"
-					className="contacts__form-email"
+					className="contacts__form-input contacts__form-email"
 					// value={formValues.email}
 					// onChange={handleForm}
 					placeholder="Enter your email..."
@@ -25,7 +25,7 @@ const Contacts = () => {
 					value="https://bodolanov-vfx.com/#/thank"
 				></input> */}
 				<textarea
-					className="contacts__form-text"
+					className="contacts__form-input contacts__form-text"
 					type="message"
 					// value={formValues.message}
 					// onChange={handleForm}

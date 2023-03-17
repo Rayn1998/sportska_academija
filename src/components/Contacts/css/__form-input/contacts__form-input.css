@@ -1,0 +1,5 @@
+.contacts__form-input {
+    background-color: transparent;
+    border: 2px solid var(--main-text-yellow);
+    border-radius: 5px;
+}

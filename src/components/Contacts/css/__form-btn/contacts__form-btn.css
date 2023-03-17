@@ -1,0 +1,14 @@
+.contacts__form-btn {
+    background-color:var(--main-text-yellow);
+    color: var(--main-black);
+    font-size: calc(3vh + 2vw);
+    border: 2px solid var(--main-text-yellow);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts__form-btn:hover {
+    box-shadow: 0 0 10px var(--main-text-yellow);
+    color: var(--main-text-color);
+}
