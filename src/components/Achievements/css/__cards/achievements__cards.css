@@ -9,7 +9,6 @@
   .achievements__cards {
     height: auto;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    padding: 40px 0;
   }
 }
