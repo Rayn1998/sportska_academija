@@ -1,10 +1,11 @@
 .fitness-solution-card__text {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 29px;
-  color: var(--main-text-color);
-  margin: 0;
-  padding: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+    /* white-space: nowrap; */
 }

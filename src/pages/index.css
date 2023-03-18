@@ -52,6 +52,8 @@
 /* CONTACTS */
 @import url("../components/Contacts/css/index.css");
 
+/* POPUP */
+@import url("../components/Popup/css/index.css");
 
 
 
@@ -136,14 +138,14 @@
 @import url('../components/Footer/css/index.css');
 
 /* POPUP */
-@import url("../blocks/popup/popup.css");
+/* @import url("../blocks/popup/popup.css");
 @import url("../blocks/popup/__body/popup__body.css");
 @import url("../blocks/popup/__close-btn/popup__close-btn.css");
 @import url("../blocks/popup/__content/popup__content.css");
 @import url("../blocks/popup/__title/popup__title.css");
 @import url("../blocks/popup/_opened/popup_opened.css");
 @import url("../blocks/popup/__player/popup__player.css");
-@import url("../blocks/popup/__player-wrapper/popup__player-wrapper.css");
+@import url("../blocks/popup/__player-wrapper/popup__player-wrapper.css"); */
 
 /* CONTACT FORM */
 @import url("../blocks/contact-form/contact-form.css");

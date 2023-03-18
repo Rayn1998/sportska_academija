@@ -1,8 +1,8 @@
 .navigation__menu-item {
-    font-family: 'Inter';
-    font-weight: 700;
+    /* font-family: 'Inter'; */
+    font-weight: 800;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 36px;
     list-style: none;
     text-decoration: none;
     display: inline-block;

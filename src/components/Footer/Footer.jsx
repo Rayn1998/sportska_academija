@@ -22,10 +22,11 @@ function Footer({ props }) {
                 </div>
 
                 <div className="footer__socials">
-                    {icons.map((icon) => {
+                    {icons.map((icon, i) => {
                         return (
                             <a
                                 href="#"
+                                key={i}
                                 className="footer__social-icon"
                             ><img src={icon} className="footer__social-icon-img" alt={icon} style={{filter: 'grayscale(100)'}} /></a>
                         );

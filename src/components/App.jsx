@@ -4,8 +4,8 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import Main from './Main';
 import '../pages/index.css';
-import Popup from './Popup';
-import Player from './Player';
+import Popup from './Popup/Popup';
+// import Player from './Player';
 
 function App() {
 	let initialWidth;
@@ -27,6 +27,7 @@ function App() {
 
 	const [prevSrollPos, setPrevScrollPos] = useState(0);
 
+    const imageRef = useRef();
 	const pageRef = useRef()
 	const swiperRef = useRef();
 	const galleryRef = useRef();
@@ -61,6 +62,12 @@ function App() {
 			setHomeDelay(false);
 		}
 	}
+
+    function handleImgClick(e) {
+        setrIsPopupOpened(true);
+        disableScroll(true);
+        imageRef.current = e.target;
+    }
 
 	useEffect(() => {
 		window.addEventListener('resize', () => {
@@ -99,6 +106,7 @@ function App() {
 		setrIsPopupOpened(false);
 		setFormOpened(false);
 		setArrowUpShow(true);
+        disableScroll(false);
 	}
 
 	function handleContactForm() {
@@ -224,6 +232,8 @@ function App() {
 					homeDelay,
 					disableScroll,
 					pageRef,
+                    handleImgClick,
+                    imageRef,
 				}}
 			/>
 
@@ -232,7 +242,9 @@ function App() {
 				isOpen={isPopupOpened}
 				onClose={closePopups}
 			>
-				<Player link={currentLink} isOpen={isPopupOpened} />
+                {/* src={imageRef.current.src} */}
+                <img className="popup__img" src={isPopupOpened ? imageRef.current.src : ''} alt='sport image' />
+				{/* <Player link={currentLink} isOpen={isPopupOpened} /> */}
 			</Popup>
 
 			<Popup

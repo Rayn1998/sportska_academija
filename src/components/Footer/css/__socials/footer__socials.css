@@ -1,10 +1,13 @@
 .footer__socials {
     margin: 0 auto;
-    padding: 0 116px;
+    /* padding: 0 116px; */
+    margin-top: 40px;
     display: flex;
     gap: 56px;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,214,0,1) 45%, rgba(255,214,0,1) 55%, rgba(0,0,0,1) 90%);
 }
 
 @media screen and (max-width: 768px) {
@@ -16,7 +19,8 @@
 
 @media screen and (max-width: 500px) {
   .footer__socials {
-    gap: 12px;
+    flex-direction: column;
+    gap: 4px;
     padding: 0 12px;
   }
 }

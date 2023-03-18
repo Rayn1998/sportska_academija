@@ -1,0 +1,6 @@
+@import url("./popup.css");
+@import url("./__body/popup__body.css");
+@import url("./__close-btn/popup__close-btn.css");
+@import url("./__content/popup__content.css");
+@import url("./__img/popup__img.css");
+@import url("./_opened/popup_opened.css");

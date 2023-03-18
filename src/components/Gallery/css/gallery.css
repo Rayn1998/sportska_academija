@@ -10,3 +10,13 @@
     box-sizing: border-box;
     background-color: var(--main-text-color);
 }
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+    }
+}
