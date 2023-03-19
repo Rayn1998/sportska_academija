@@ -1,9 +1,0 @@
-.contact-form__text {
-    height: 100px;
-    width: 100%;
-    text-align: justify;
-    color: var(--main-text-color);
-    background-color: var(--workstack-bg);
-    border: 5px solid var(--btn-small-border);
-    border-radius: 10px;
-}

@@ -1,9 +1,0 @@
-.clients {
-    padding: 80px 112px 130px;
-}
-
-@media screen and (max-width: 768px) {
-    .clients {
-        padding: 10px 60px;
-    }
-}
