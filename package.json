@@ -2,7 +2,7 @@
   "name": "bodolanov-vfx",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://rayn1998.github.io/sportska_academija/",
   "dependencies": {
     "@uiw/react-clock": "^1.2.4",
     "body-scroll-lock": "^4.0.0-beta.0",
@@ -15,6 +15,8 @@
     "swiper": "^9.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "github-pages": "^3.0.2",
     "react-player": "^2.11.0",
     "serve": "^14.1.1"
   }
