@@ -1,0 +1,12 @@
+{
+    "short_name": "Sportska Akademeja",
+    "start_url": "",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "../src/components/Navigation/images/logo.jpg"
+        }
+    ]
+  }
