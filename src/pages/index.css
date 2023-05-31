@@ -1,58 +1,58 @@
-@import url("../vendor/normalize.css");
-@import url("../vendor/fonts/fonts.css");
-@import url("../blocks/bold-text.css");
-@import url("../blocks/yellow-text.css");
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
+@import url('../blocks/bold-text.css');
+@import url('../blocks/yellow-text.css');
 
 /* PAGE */
-@import url("../blocks/page.css");
+@import url('../blocks/page.css');
 
 /* NAVIGATION */
-@import url("../components/Navigation/css/index.css");
+@import url('../components/Navigation/css/index.css');
 
 /* LOADING */
-@import url("../blocks/loading.css");
+@import url('../blocks/loading.css');
 
 /* PAGE NOT FOUND */
-@import url("../blocks/page-not-found.css");
+@import url('../blocks/page-not-found.css');
 
 /* BODY */
-@import url("../blocks/body/body.css");
+@import url('../blocks/body/body.css');
 
 /* BLOCK-TITLE */
-@import url("../components/BlockTitle/css/index.css");
+@import url('../components/BlockTitle/css/index.css');
 
 /* HOME */
-@import url("../components/Home/css/index.css");
+@import url('../components/Home/css/index.css');
 
 /* HEADER-MEDIA */
-@import url("../components/HeaderMedia/css/index.css");
+@import url('../components/HeaderMedia/css/index.css');
 
 /* MENU-ICON */
-@import url("../components/MenuButton/css/index.css");
+@import url('../components/MenuButton/css/index.css');
 
 /* SLIDER */
-@import url("../components/Slider/css/index.css");
+@import url('../components/Slider/css/index.css');
 
 /* FITNESS-SOLUTION */
-@import url("../components/FitnessSolution/css/index.css");
+@import url('../components/FitnessSolution/css/index.css');
 
 /* FITNESS-SOLUTION-CARD */
-@import url("../components/FintessSolutionCard/css/index.css");
+@import url('../components/FintessSolutionCard/css/index.css');
 
 /* ACHIEVEMENTS */
-@import url("../components/Achievements/css/index.css");
+@import url('../components/Achievements/css/index.css');
 
 /* GALLERY */
-@import url("../components/Gallery/css/index.css");
+@import url('../components/Gallery/css/index.css');
 
 /* ARROW-UP */
-@import url("../components/ArrowUp/css/index.css");
+@import url('../components/ArrowUp/css/index.css');
 
 /* CONTACTS */
-@import url("../components/Contacts/css/index.css");
+@import url('../components/Contacts/css/index.css');
 
 /* POPUP */
-@import url("../components/Popup/css/index.css");
+@import url('../components/Popup/css/index.css');
 
 /* FOOTER */
 @import url('../components/Footer/css/index.css');

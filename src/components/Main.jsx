@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 import Home from './Home/Home';
@@ -13,11 +13,9 @@ import Achievements from './Achievements/Achievements';
 import BlockTitle from './BlockTitle/BlockTitle';
 import Gallery from './Gallery/Gallery';
 import Contacts from './Contacts/Contacts';
-import ContactForm from './ContactForm';
 import Footer from './Footer/Footer';
 
 function Main({ props }) {
-	// scroll={props.scrollHome}
 	return (
 		<main className="page" ref={props.pageRef}>
 			<ArrowUp scroll={props.scrollHome} show={props.arrowUpShow} />
@@ -26,7 +24,6 @@ function Main({ props }) {
 
 			<Routes>
 				<Route path="/page-not-found" element={<PageNotFound />} />
-				{/* <Route path='/thank' element={<Thank />} /> */}
 
 				<Route
 					exact
@@ -46,7 +43,6 @@ function Main({ props }) {
 							<BlockTitle text="OUR" yellowText="GALLERY" space={true} />
 							<Gallery props={props} />
 							<BlockTitle text="CONTACT" yellowText="FORM" space={true} />
-							{/* <ContactForm /> */}
 							<Contacts />
 							<Footer props={props} />
 						</React.Suspense>

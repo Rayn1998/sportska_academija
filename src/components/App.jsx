@@ -1,19 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useLocation, Navigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import Main from './Main';
 import '../pages/index.css';
 import Popup from './Popup/Popup';
-// import Player from './Player';
 
 function App() {
 	let initialWidth;
 	let initialHome;
-	(function () {
-		window.innerWidth > 1000
-			? (initialWidth = false)
-			: (initialWidth = true);
+	(function() {
+		window.innerWidth > 1000 ? (initialWidth = false) : (initialWidth = true);
 		window.innerWidth > 500 ? (initialHome = true) : (initialHome = false);
 	})();
 
@@ -27,8 +24,8 @@ function App() {
 
 	const [prevSrollPos, setPrevScrollPos] = useState(0);
 
-    const imageRef = useRef();
-	const pageRef = useRef()
+	const imageRef = useRef();
+	const pageRef = useRef();
 	const swiperRef = useRef();
 	const galleryRef = useRef();
 	const homeRef = useRef();
@@ -42,7 +39,7 @@ function App() {
 		setArrowUpShow(
 			(prevSrollPos > currentScrollPos &&
 				prevSrollPos - currentScrollPos > 1000) ||
-				currentScrollPos > 350
+				currentScrollPos > 350,
 		);
 		setPrevScrollPos(currentScrollPos);
 	}
@@ -63,31 +60,28 @@ function App() {
 		}
 	}
 
-    function handleImgClick(e) {
-        setrIsPopupOpened(true);
-        disableScroll(true);
-        imageRef.current = e.target;
-    }
+	function handleImgClick(e) {
+		setrIsPopupOpened(true);
+		disableScroll(true);
+		imageRef.current = e.target;
+	}
 
 	useEffect(() => {
 		window.addEventListener('resize', () => {
 			menuTransform();
 			homeIconDelay();
 		});
-		return () => window.removeEventListener('resize', () => {
-			menuTransform();
-			homeIconDelay();
-		});
+		return () =>
+			window.removeEventListener('resize', () => {
+				menuTransform();
+				homeIconDelay();
+			});
 	}, [menuTransform, homeIconDelay, shown, homeDelay]);
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleArrowUp);
 		return () => window.removeEventListener('scroll', handleArrowUp);
 	}, [handleArrowUp, arrowUpShow, prevSrollPos]);
-
-	// useEffect(() => {
-	// 	shown ? disableBodyScroll(true) : disableBodyScroll(false);
-	// }, [shown]);
 
 	function menuClick(e) {
 		setShown(!shown);
@@ -106,7 +100,7 @@ function App() {
 		setrIsPopupOpened(false);
 		setFormOpened(false);
 		setArrowUpShow(true);
-        disableScroll(false);
+		disableScroll(false);
 	}
 
 	function handleContactForm() {
@@ -130,7 +124,7 @@ function App() {
 
 	const disableScroll = (state) => {
 		state ? disableBodyScroll(pageRef) : enableBodyScroll(pageRef);
-	}
+	};
 
 	function scroll(ref) {
 		ref.current.scrollIntoView({
@@ -224,7 +218,7 @@ function App() {
 					linkHome,
 					menuClick,
 					shown,
-          			setShown,
+					setShown,
 					arrowUpShow,
 					toOtherProjects,
 					toCurtainProject,
@@ -232,27 +226,24 @@ function App() {
 					homeDelay,
 					disableScroll,
 					pageRef,
-                    handleImgClick,
-                    imageRef,
+					handleImgClick,
+					imageRef,
 				}}
 			/>
 
-			<Popup
-				title={currentTitle}
-				isOpen={isPopupOpened}
-				onClose={closePopups}
-			>
-                {/* src={imageRef.current.src} */}
-                <img className="popup__img" src={isPopupOpened ? imageRef.current.src : ''} alt='sport image' />
-				{/* <Player link={currentLink} isOpen={isPopupOpened} /> */}
+			<Popup title={currentTitle} isOpen={isPopupOpened} onClose={closePopups}>
+				<img
+					className='popup__img'
+					src={isPopupOpened ? imageRef.current.src : ''}
+					alt='sport image'
+				/>
 			</Popup>
 
 			<Popup
 				isOpen={isFormOpened}
 				onClose={closePopups}
-				title="CONTACT WITH ME"
+				title='CONTACT WITH ME'
 			>
-				{/* <ContactForm onClose={closePopups} /> */}
 			</Popup>
 		</>
 	);
